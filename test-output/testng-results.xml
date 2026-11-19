@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-18T12:19:04 IST" name="Suite" finished-at="2026-11-18T12:19:16 IST" duration-ms="11338">
+  <suite started-at="2026-11-19T12:43:38 IST" name="Suite" finished-at="2026-11-19T12:43:45 IST" duration-ms="7466">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:project.ApexGlobal.Runners.TestNGTestRunner@126253fd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-11-18T12:19:04 IST" name="TestChrome" finished-at="2026-11-18T12:19:16 IST" duration-ms="11338">
+    <test started-at="2026-11-19T12:43:38 IST" name="TestChrome" finished-at="2026-11-19T12:43:45 IST" duration-ms="7466">
       <class name="project.ApexGlobal.Runners.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:project.ApexGlobal.Runners.TestNGTestRunner@126253fd]" started-at="2026-11-18T12:19:04 IST" name="setUpClass" finished-at="2026-11-18T12:19:05 IST" duration-ms="687" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:project.ApexGlobal.Runners.TestNGTestRunner@126253fd]" started-at="2026-11-19T12:43:38 IST" name="setUpClass" finished-at="2026-11-19T12:43:39 IST" duration-ms="665" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@350da119]]>
+                <![CDATA[org.testng.TestRunner@4aebee4b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:project.ApexGlobal.Runners.TestNGTestRunner@126253fd]" started-at="2026-11-18T12:19:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-11-18T12:19:16 IST" duration-ms="10579" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:project.ApexGlobal.Runners.TestNGTestRunner@126253fd]" started-at="2026-11-19T12:43:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-11-19T12:43:45 IST" duration-ms="6711" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Bill is paid successfully"]]>
+                <![CDATA["Verify Toggle Balance button functionality"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Bill Payment functionality"]]>
+                <![CDATA["Toggle Balance button functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:project.ApexGlobal.Runners.TestNGTestRunner@126253fd]" started-at="2026-11-18T12:19:16 IST" name="tearDownClass" finished-at="2026-11-18T12:19:16 IST" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:project.ApexGlobal.Runners.TestNGTestRunner@126253fd]" started-at="2026-11-19T12:43:45 IST" name="tearDownClass" finished-at="2026-11-19T12:43:45 IST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

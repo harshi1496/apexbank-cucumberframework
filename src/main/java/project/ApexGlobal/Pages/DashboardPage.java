@@ -34,6 +34,12 @@ public class DashboardPage {
 	@FindBy(linkText="logoutBtn")
 	private WebElement logOut;
 	
+	@FindBy(id="totalCombinedBalance")
+	private WebElement totalBal;
+	
+	@FindBy(name="toggleBalanceVisibilityButton")
+	private WebElement toggleButton;
+	
 	private static double savingsBal;
 	private static double checkingBal;
 	private static double fdBal;
@@ -60,7 +66,7 @@ public class DashboardPage {
 	
 	public void getTitle() {
 		
-		Assert.assertTrue(driver.getTitle().equals("dashboard"));
+		Assert.assertTrue(driver.getTitle().contains("Dashboard"));
 		ExtentReportManager.getTest().pass("Navigated to Dashboard successfully");
 	}
 	
@@ -86,5 +92,26 @@ public class DashboardPage {
 	public WebElement getSavingsAccountBalanceFromDashboard() {
 		
 		return savingsAccountBalance;
+	}
+	
+	public void verifyMaskedBalance() {
+		
+		String bal = totalBal.getText().trim();
+		System.out.println("balance:"+bal);
+		String pattern = "^\\u2022*$";
+		Assert.assertTrue(bal.matches(pattern));
+		ExtentReportManager.getTest().pass("Total Balance is masked successfully.");
+		
+	}
+	
+	public void verifyTotalBalanceIsDisplayed() {
+		
+		Assert.assertTrue(totalBal.isDisplayed(),"Total balance is displayed");
+		ExtentReportManager.getTest().pass("Total Balance is displayed successfully.");
+	}
+	
+	public WebElement getToggleButton() {
+		
+		return toggleButton;
 	}
 }

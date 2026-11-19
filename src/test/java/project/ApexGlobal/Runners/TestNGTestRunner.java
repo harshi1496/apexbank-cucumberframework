@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
     // Path to your feature files
-    features = "src/test/resources/project/ApexGlobal/Features/BillPaymentFunctionality.feature",
+    features = "src/test/resources/project/ApexGlobal/Features/ToggleBalanceFunctionaity.feature",
     
     // Package where your step definition classes live
     glue = {"project.ApexGlobal.StepDefinitions","project.ApexGlobal.Hooks"},
