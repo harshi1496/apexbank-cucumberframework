@@ -2,8 +2,9 @@ Feature: Bill Payment functionality
 
 Background: 
 	Given the user is on the login Page
-	When the user enters "john.doe" and "password123" and clicks login button
-	Then the user should be redirected to dashboard page
+	When the user enters "john.doe" and "password123"
+	And  the user clicks login button
+	Then the user should be logged in successfully
 
 Scenario Outline: Verify Bill is paid successfully
 	 Given user is on the Bill payment page
