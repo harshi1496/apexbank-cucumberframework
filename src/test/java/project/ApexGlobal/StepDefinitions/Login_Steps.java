@@ -24,16 +24,21 @@ public class Login_Steps{
 		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
 	}
 	
-	@When("the user enters {string} and {string} and clicks login button")
+	@When("the user enters {string} and {string}")
     public void enterCredentialsAndLogin(String username, String password) {
         
 		lp = new LoginPage();
         lp.getUsername().sendKeys(username);
         lp.getPassword().sendKeys(password);
-        lp.getLoginBtn().click();
+        
     }
 	
-	@Then("the user should be redirected to dashboard page")
+	@When("the user clicks login button")
+	public void clickLoginButton() {
+		lp.getLoginBtn().click();
+	}
+	
+	@Then("the user should be logged in successfully")
 	public void verifySuccessfullLogin() {
 		
 		db = new DashboardPage();

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 17 11:57:17 IST 2026</td>
+<td>Started on:</td><td>Thu Nov 19 12:12:57 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12579 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (435 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,18 +76,76 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='project.ApexGlobal.Runners.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: project.ApexGlobal.Runners.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Bill is paid successfully", "Bill Payment functionality"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.pass(String)&quot; because the return value of &quot;project.ApexGlobal.Utilities.ExtentReportManager.getTest()&quot; is null
-	at project.ApexGlobal.Pages.BillPaymentPage.verifyPaymentIsSuccessful(BillPaymentPage.java:133)
-	at project.ApexGlobal.StepDefinitions.BillPayment_Steps.assertPaymentSuccessful(BillPayment_Steps.java:54)
-	at ✽.the payment should be successful(file:///C:/Users/Harshita/eclipse-workspace/cucumberworkspace/ApexGlobal/src/test/resources/project/ApexGlobal/Features/BillPaymentFunctionality.feature:14)
-</pre></div><a href='#' onClick='toggleBox("stack-trace224878495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace224878495'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.pass(String)&quot; because the return value of &quot;project.ApexGlobal.Utilities.ExtentReportManager.getTest()&quot; is null
-	at project.ApexGlobal.Pages.BillPaymentPage.verifyPaymentIsSuccessful(BillPaymentPage.java:133)
-	at project.ApexGlobal.StepDefinitions.BillPayment_Steps.assertPaymentSuccessful(BillPayment_Steps.java:54)
-	at ✽.the payment should be successful(file:///C:/Users/Harshita/eclipse-workspace/cucumberworkspace/ApexGlobal/src/test/resources/project/ApexGlobal/Features/BillPaymentFunctionality.feature:14)
+<td title='project.ApexGlobal.Runners.TestNGTestRunner.setUpClass()'><b>setUpClass</b><br>Test class: project.ApexGlobal.Runners.TestNGTestRunner<br>Parameters: org.testng.TestRunner@6c2c1385</td>
+<td><div><pre>java.lang.IllegalArgumentException: path must exist: C:\Users\Harshita\eclipse-workspace\cucumberworkspace\ApexGlobal\src\test\resources\project\ApexGlobal\Features\ToggleBalanceFunctionality.feature
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:55)
+	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:37)
+	at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:60)
+	at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:133)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:125)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace848363848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace848363848'><pre>java.lang.IllegalArgumentException: path must exist: C:\Users\Harshita\eclipse-workspace\cucumberworkspace\ApexGlobal\src\test\resources\project\ApexGlobal\Features\ToggleBalanceFunctionality.feature
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:55)
+	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:37)
+	at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:60)
+	at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:133)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:125)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>11</td>
+<td>0</td>
 <td>project.ApexGlobal.Runners.TestNGTestRunner@62379589</td></tr>
 </table><p>
 </body>
